@@ -150,6 +150,10 @@ LOGIN_REDIRECT_URL = '/'
 # If you don't have an email server running yet add this line to avoid any possible errors.
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
+#CSRF TRUSTED ORIGINS
+
+CSRF_TRUSTED_ORIGINS = ["https://stripesubscriptiondjango.herokuapp.com",]
+
 #STRIPE
 
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51LeiyXSCC5Vm9q7RZW4FOfNpvf0dQFVgjXPfJAaVZbX15Zs77UrCM7oQVR22ZA3E8VeqxIgmaNGU9c1Ugdh4556J0085oBOWpc'
