@@ -25,7 +25,9 @@ SECRET_KEY = 'django-insecure-6@rdtei@s@!(4+^o7_&m2j0dhi@hm$s*)x6nwbo2_w*!c_b2*-
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['stripesubscriptiondjango.herokuapp.com',]
+ALLOWED_HOSTS = ['stripesubscriptiondjango.herokuapp.com',
+                 '127.0.0.1',
+                 ]
 
 
 # Application definition
@@ -159,6 +161,9 @@ CSRF_TRUSTED_ORIGINS = ["https://stripesubscriptiondjango.herokuapp.com",]
 STRIPE_PUBLISHABLE_KEY = 'pk_test_51LeiyXSCC5Vm9q7RZW4FOfNpvf0dQFVgjXPfJAaVZbX15Zs77UrCM7oQVR22ZA3E8VeqxIgmaNGU9c1Ugdh4556J0085oBOWpc'
 STRIPE_SECRET_KEY = 'sk_test_51LeiyXSCC5Vm9q7RhikfYG3Q0h3CGIx818oftn8PTyzk9OGgxkTMQMOVDiHwfrqAjVW5D4P8IrpL73skJFqub8Ty00wekDd8Tm'
 
-STRIPE_PRICE_ID = 'price_1LezClSCC5Vm9q7RbnDrFB0E'
+STRIPE_PRICE_ID = 'price_1LezClSCC5Vm9q7RbnDrFB0E' #1000 mobile plan
+STRIPE_PRICE_ID2 = 'price_1LfGaTSCC5Vm9q7R7ueAdZd6' #2000 basic plan
+STRIPE_PRICE_ID3 = 'price_1LfGkhSCC5Vm9q7RnD4iGden' #5000 standard plan
+STRIPE_PRICE_ID4 = 'price_1LfGyASCC5Vm9q7RdyLgB1hn' #700 premium plan monthly
 
 STRIPE_ENDPOINT_SECRET = 'whsec_fc349d312fd129b9d8e22437e1678e499eaff126614eb87be4f9baf0cff6efb8'

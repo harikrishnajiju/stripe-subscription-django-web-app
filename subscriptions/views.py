@@ -35,7 +35,7 @@ def create_checkout_session(request):
                 mode='subscription',
                 line_items=[
                     {
-                        'price': settings.STRIPE_PRICE_ID,
+                        'price': settings.STRIPE_PRICE_ID2,
                         'quantity': 1,
                     }
                 ]
